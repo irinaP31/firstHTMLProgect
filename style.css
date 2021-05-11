@@ -1,0 +1,397 @@
+*{
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Roboto; 
+            src: url('fonts/Roboto-Regular.ttf'); 
+}
+
+@font-face {
+    font-family: Roboto; 
+            font-weight: 500;
+            src: url('fonts/Roboto-Medium.ttf'); 
+}
+
+body{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+header{
+    background-color: #EEEFF1;
+    width: 100%;
+    padding-bottom: 145px;
+}
+
+.container {
+    width: 1110px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 60px;
+}
+
+nav > a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 25px;
+    user-select: none;
+    padding: 10px;
+    letter-spacing: 1px;
+}
+
+.menu nav a:first-child{
+    margin-left: 0;
+}
+
+.menu nav a:hover{
+    color: #34547a;
+}
+
+.top-title{
+    display: flex;
+    margin-top: 100px;
+}
+
+.top-title>div{
+    width: 50%;
+}
+
+.top-title .image{
+    background-image: url("image/Frame.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 357px 233px;
+}
+
+h1{
+    font-weight: 500;
+    font-size: 48px;
+    color: #000;
+    line-height: 78.75px;
+}
+
+p{
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #727272;
+}
+
+.btn{
+    background-color: #34547a;
+    color: white;
+    width: 225px;
+    height: 65px;
+    border: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 45px;
+    user-select: none;
+}
+
+/* aboutme */
+
+.aboutme h2{
+    margin-top: 119px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37.5px;
+    color: #000;
+}
+.aboutme p{
+    text-align: center;
+    width: 540px;
+    margin: 50px auto 94px;
+    font-size: 16px;
+    font-weight: 400;
+    color:  #727272;
+    line-height: 26.25px;
+}
+
+/* aboutme end */
+
+/* skills */
+
+.skills{
+    background-color: #34547a;
+    padding: 100px 0;
+}
+
+.skills-con{
+    display: flex;
+    justify-content: space-between;
+}
+
+.block{
+    display: flex;
+    width: 140px;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.block .icon{
+    background-image: url(./image/project.svg);
+    background-repeat: no-repeat;
+    min-width: 50px;
+    height: 50px;
+}
+
+.block .stats{
+    color: #fff;
+    font-size: 16px;
+    text-transform: lowercase;
+}
+
+.block .stats b{
+    font-size: 21px;
+    font-weight: 500;
+}
+
+/* myskills */
+
+.myskills{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 21px;
+}
+
+img[src*="Foto"]{
+    width: 555px;
+    height: 450px;
+    margin-bottom: 101px;
+}
+
+.line{
+    width: 445px;
+    height: 4px;
+    background-color: #c4c4c4;
+}
+
+.line2{
+    width: 350px;
+    height: 4px;
+    background-color: #34547a;
+}
+
+.myskills h2{
+    margin-top: 102px;
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37.5px;
+    color: #000;
+}
+
+.myskills p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26.25px;
+    color: #727272;
+}   
+
+/* work */
+
+.work{
+    width: 100%;
+    background-color: #EEEFF1;
+    padding-bottom: 100px;
+}
+
+.work h2{
+    margin-top: 100px;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37.5px;
+    color: #000;
+}
+.work p{
+    text-align: center;
+    width: 540px;
+    margin: 50px auto 57px;
+    font-size: 16px;
+    color:  #727272;
+    line-height: 26.25px;
+}
+.picture{
+    width: 1110px;
+    height: 600px;
+    margin: 0 auto;
+    background-image: url(./image/play-button.png), url(./image/vidio.jpg);
+    background-repeat: no-repeat;
+    background-size: 100px 100px, 100% 100%;
+    background-position: center center;
+}
+
+/* pic */
+
+.pic{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pic div{  
+    width: 25%;
+    background-image: url("image/Group.svg");
+    background-size: 21%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #34547a;
+}
+
+.pic div>img{
+    width: 100%;
+    display: block;
+}
+
+.pic div>img:hover{
+    opacity: 0.2;
+}
+
+/* logo */
+
+.logo{
+    padding-bottom:120px;
+    padding-top: 72px;
+}
+
+.logotip{
+    width: 255px;
+    height: 120px;
+    background-image: url('image/logo-microsoft.png');
+}
+
+.logo div.container{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* want */
+
+.want{
+    background-color: #EEEFF1;
+    padding: 100px;
+}
+
+.want div h2{
+    margin-top: 0;
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 37.5px;
+}
+
+.want div p{
+    text-align: center;
+    width: 540px;
+    margin: 50px auto 65px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26.25px;
+    color:  #727272;
+}
+
+.want form{
+    
+    margin: 0 auto;
+    justify-content: center;
+    width: 540px;
+}
+
+form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.want form textarea{
+    font-family: Roboto; 
+    width: 540px;
+    margin-top: 20px;
+    color:#5F5D5D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.97px;
+    padding: 13px 20px;
+}
+
+form input{
+    width: 255px;
+    color:#5F5D5D;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22.97px;
+    padding: 12px 20px 12px;
+}
+
+input[type="button"]{
+    display: block;
+    width: 190px;
+    height: 55px;
+    margin: 50px auto 0;
+    background-color: #34547a;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    user-select: none;
+}
+
+/* footer */
+
+footer{
+    background-color: #34547a;
+    padding-top: 52px;
+    padding-bottom: 45px;
+}
+
+footer .container{
+
+    display: flex;
+    justify-content: space-between;
+}
+
+footer p{
+    font-weight: 500;
+    font-size: 21px;
+    line-height: 24.61px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    color: #fff;
+}
+
+footer span{
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 21.33px;
+    color: #fff;
+}
+
+.social{
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+.social a{
+    display: inline-block;
+    width: 44px;
+    height: 40px;
+    background-image: url('image/vk-logo.png');
+    margin-left: 20px;
+}
